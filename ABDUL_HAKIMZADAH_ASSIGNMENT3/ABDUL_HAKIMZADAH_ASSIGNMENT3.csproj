@@ -116,6 +116,9 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AddReservationRequest.xaml.cs">
+      <DependentUpon>AddReservationRequest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -128,6 +131,9 @@
     <Compile Include="RequestStatus.cs" />
     <Compile Include="ReservationRequest.cs" />
     <Compile Include="RoomLayoutType.cs" />
+    <Compile Include="ViewReservationsRequest.xaml.cs">
+      <DependentUpon>ViewReservationsRequest.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -157,7 +163,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ViewReservationRequestsPage.xaml">
+    <Page Include="ViewReservationsRequest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
