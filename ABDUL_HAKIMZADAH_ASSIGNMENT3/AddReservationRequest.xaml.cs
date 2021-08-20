@@ -27,9 +27,21 @@ namespace ABDUL_HAKIMZADAH_ASSIGNMENT3
             this.InitializeComponent();
         }
 
+        private ReservationRequest NewReservation()
+        {
+           
+            string RequestedBy = Reservename.Text;
+            string MeetingPurpose = ReserveDescrip.Text;
+            //int Start = DatePicker.getValue().Format(DateTimeFormatter.ofpattern);
+            int ParticipantCount = int.Parse(ReserveParticipant.Text);
+            return new ReservationRequest();
+        }
+
+
         private void AddReservation_button_Click(object sender, RoutedEventArgs e)
         {
-
+            ReservationRequest reservation = NewReservation();
+            
         }
 
         private void ViewMeetingRooms_button_Click(object sender, RoutedEventArgs e)
