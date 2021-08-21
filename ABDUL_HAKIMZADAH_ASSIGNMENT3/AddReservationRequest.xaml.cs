@@ -40,7 +40,7 @@ namespace ABDUL_HAKIMZADAH_ASSIGNMENT3
 
         private void AddReservation_button_Click(object sender, RoutedEventArgs e)
         {
-            ReservationRequest reservation = NewReservation();
+
             
         }
 
